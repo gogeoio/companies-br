@@ -1,0 +1,12 @@
+{
+  "demoName": "companies-br",
+  "protocol": "http://",
+  "url": "api.gogeo.io/1.0",
+  "tileUrl": "{s}.gogeo.io/1.0",
+  "subdomains": [ "m1", "m2", "m3", "m4" ],
+  "database": "demos",
+  "collection": "brazilian_companies",
+  "dashboardGeoAgg": "state",
+  "stylename": "gogeo_many_points",
+  "mapkey": "dc837a69-c74f-4641-a79d-2bf6e900a135"
+}
