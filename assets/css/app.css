@@ -23,6 +23,10 @@ body {
   cursor: crosshair;
 }
 
+.ui-select-container.ui-select-multiple.ui-select-bootstrap.dropdown.form-control.ng-valid.ng-dirty {
+  max-height: 45px;
+}
+
 .ui-select-container.ui-select-multiple.ui-select-bootstrap.dropdown.form-control.ng-valid.open.ng-dirty {
   max-height: 45px;
 }
