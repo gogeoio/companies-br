@@ -1,0 +1,81 @@
+<!-- Template from: http://bootsnipp.com/snippets/featured/blog-post-list-with-photo -->
+
+<div ng-controller="PopupController" class="container" style="width: 750px; margin-left: -25px;">
+  
+  <form class="form-horizontal" style="margin-left: -90px;">
+    <div class="form-group" style="margin-bottom: 10px;">
+      <label for="inputFantasyName" class="col-sm-3 control-label">
+        Fantasy Name
+      </label>
+      <div class="col-sm-9">
+        <input type="text" class="form-control" id="inputFantasyName" style="font-size: 12px;" placeholder="{{ tweetData['fantasy_name'] | capitalize:true }}" disabled>
+      </div>
+    </div>
+
+    <div class="form-group" style="margin-bottom: 10px;">
+      <label for="inputName" class="col-sm-3 control-label">
+        Name (@)
+      </label>
+      <div class="col-sm-9">
+        <input type="text" class="form-control" id="inputName" style="font-size: 12px;" placeholder="{{ tweetData['name'] | capitalize:true }}" disabled>
+      </div>
+    </div>
+
+    <div class="form-group" style="margin-bottom: 10px;">
+      <label for="inputCnae" class="col-sm-3 control-label">
+        CNAE (#)
+      </label>
+      <div class="col-sm-9">
+        <input type="text" class="form-control" id="inputCnae" style="font-size: 12px;" placeholder="{{ tweetData['cnae_p_label'] }}" disabled>
+      </div>
+    </div>
+
+    <div class="form-group" style="margin-bottom: 10px;">
+      <label for="inputAddress" class="col-sm-3 control-label">
+        Address
+      </label>
+      <div class="col-sm-9">
+        <input type="text" class="form-control" id="inputAddress" style="font-size: 12px;" placeholder="{{ formatAddress(tweetData) }}" disabled>
+      </div>
+    </div>
+  </form>
+
+  <!-- <div class="page-header" ng-show="tweetData['fantasy_name'].length > 0">
+    <h4>{{ tweetData['fantasy_name'] }}</h4>
+  </div>
+
+  <div class="page-header" ng-show="tweetData['fantasy_name'].length == 0">
+    <h4>{{ tweetData['name'] }}</h4>
+  </div>
+
+  <div class="fluid">
+    <p ng-show="tweetData['fantasy_name'].length > 0">{{ tweetData['name'] }}</p>
+    <p>{{ tweetData['cnae_p_label'] }}</p>
+  </div> -->
+
+  <!-- <div class="well">
+    <div class="media">
+      <div class="media-body">
+        <ul class="list-inline list-unstyled">
+          <li>
+            <h4 class="media-heading">{{ tweetData['name'] | capitalize:true }}</h4>
+          </li>
+          <li class="pull-right" style="margin-top: -15px;">
+            <p class="text-right">{{ tweetData['fantasy_name'] }}</p>
+          </li>
+        </ul>
+        <p ng-bind-html="tweetData.logradouro">
+
+        </p>
+        <ul class="list-inline list-unstyled">
+          <li>
+            <span>
+              <i class="glyphicon glyphicon-calendar"></i>
+              {{ tweetData.city }} | {{ tweetData.state }}
+            </span>
+          </li>
+        </ul>
+      </div>
+   </div>
+  </div> -->
+</div>
